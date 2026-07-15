@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Richmo Pizzeria</title>
+<meta name="description" content="Full menu — Richmo Pizzeria, Miriswatta. Wood-fired pizza, sides, salads, desserts and drinks.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<canvas id="embers"></canvas>
+<div class="grain"></div>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">
+    <span class="mark"><img src="assets/logo.png" alt="Richmo Pizzeria logo"></span>
+    <span>Richmo<small>Pizzeria · Miriswatta</small></span>
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html#reserve" class="nav-cta">Reserve a Table</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="page-hero">
+    <span class="eyebrow reveal in">The Full Board</span>
+    <h1 class="reveal in" style="--i:1">Everything that comes<br>out of the oven.</h1>
+    <p class="lede reveal in" style="--i:2">Prices in LKR. Every pizza is 12", made to order, ready in under ten minutes.</p>
+  </section>
+
+  <!-- FILTER TABS -->
+  <div class="filter-bar container">
+    <button class="filter-tab active" data-filter="all">All</button>
+    <button class="filter-tab" data-filter="classic">Classic Line</button>
+    <button class="filter-tab" data-filter="fusion">Miriswatta Line</button>
+    <button class="filter-tab" data-filter="sides">Sides & Salads</button>
+    <button class="filter-tab" data-filter="sweet">Dessert & Drinks</button>
+  </div>
+
+  <!-- MENU LIST -->
+  <section class="section menu-section">
+    <div class="container">
+
+      <div class="menu-cat" data-cat="classic">
+        <h3 class="cat-title reveal">Classic Line</h3>
+        <div class="menu-list stagger">
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Margherita di Richmo</h4><p>San Marzano tomato, fior di latte, torn basil, chilli oil</p></div>
+            <span class="dots"></span><span class="price">1,190</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Marinara</h4><p>Tomato, garlic, oregano, extra virgin olive oil — no cheese</p></div>
+            <span class="dots"></span><span class="price">990</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Quattro Formaggi</h4><p>Mozzarella, gorgonzola, parmesan, provolone</p></div>
+            <span class="dots"></span><span class="price">1,450</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Pepperoni Inferno</h4><p>Double pepperoni, chilli honey, mozzarella</p></div>
+            <span class="dots"></span><span class="price">1,390</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>BBQ Chicken Ranch</h4><p>Grilled chicken, smoked BBQ base, red onion, ranch drizzle</p></div>
+            <span class="dots"></span><span class="price">1,550</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Funghi e Tartufo</h4><p>Wild mushroom, mozzarella, truffle oil, thyme</p></div>
+            <span class="dots"></span><span class="price">1,650</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-cat="fusion">
+        <h3 class="cat-title reveal">Miriswatta Line — House Fusion</h3>
+        <div class="menu-list stagger">
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Devilled Chicken Pizza <span class="tag">signature</span></h4><p>House devilled chicken, capsicum, red onion, curry leaf oil</p></div>
+            <span class="dots"></span><span class="price">1,590</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Kottu Pizza <span class="tag">signature</span></h4><p>Godamba roti shreds, egg, leeks, carrot, dark soy glaze</p></div>
+            <span class="dots"></span><span class="price">1,690</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Prawn Ambulthiyal Pizza</h4><p>Sour-spiced prawn, goraka reduction, mozzarella</p></div>
+            <span class="dots"></span><span class="price">1,790</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Cheese Kottu Melt</h4><p>Kottu base, triple cheese blend, egg ribbons</p></div>
+            <span class="dots"></span><span class="price">1,650</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Devilled Cuttlefish Pizza</h4><p>Devilled cuttlefish, capsicum, onion, mozzarella</p></div>
+            <span class="dots"></span><span class="price">1,750</span>
+          </div>
+          <div class="menu-row">
+            <div class="menu-row-name"><h4>Polos Curry Pizza</h4><p>Green jackfruit curry, coconut sambol, curry leaf, cashew</p></div>
+            <span class="dots"></span><span class="price">1,490</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-cat="sides">
+        <h3 class="cat-title reveal">Sides & Salads</h3>
+        <div class="menu-list stagger">
+          <div class="menu-row"><div class="menu-row-name"><h4>Garlic Focaccia</h4><p>Rosemary, sea salt, roasted garlic butter</p></div><span class="dots"></span><span class="price">590</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>Buffalo Wings (6pc)</h4><p>Wood-fired, blue cheese dip</p></div><span class="dots"></span><span class="price">890</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>Bruschetta Trio</h4><p>Tomato-basil, mushroom, olive tapenade</p></div><span class="dots"></span><span class="price">690</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>Caprese Salad</h4><p>Buffalo mozzarella, heirloom tomato, basil oil</p></div><span class="dots"></span><span class="price">750</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>Rocket & Parmesan</h4><p>Rocket, shaved parmesan, lemon, olive oil</p></div><span class="dots"></span><span class="price">690</span></div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-cat="sweet">
+        <h3 class="cat-title reveal">Dessert & Drinks</h3>
+        <div class="menu-list stagger">
+          <div class="menu-row"><div class="menu-row-name"><h4>Chocolate Lava Pizza</h4><p>Dark chocolate, mascarpone, sea salt</p></div><span class="dots"></span><span class="price">890</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>Gelato (2 scoops)</h4><p>Ask for today's flavours</p></div><span class="dots"></span><span class="price">490</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>Italian Soda</h4><p>Blood orange or passionfruit</p></div><span class="dots"></span><span class="price">390</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>Fresh Lime</h4><p>Still or soda</p></div><span class="dots"></span><span class="price">290</span></div>
+          <div class="menu-row"><div class="menu-row-name"><h4>House Red / White (glass)</h4><p>Ask your server for today's pour</p></div><span class="dots"></span><span class="price">950</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-band-inner reveal-scale">
+      <h2>Ready to order?</h2>
+      <p>Walk in, call ahead, or reserve a table for tonight.</p>
+      <a href="contact.html#reserve" class="btn btn-primary">Reserve a table
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <span class="mark"><img src="assets/logo.png" alt="Richmo Pizzeria logo"></span>
+        <span>Richmo</span>
+      </a>
+      <p>Wood-fired pizza on the Miriswatta road. Dine in, takeaway, or delivery — same oven, same fire.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <ul><li><a href="#">Miriswatta Road, Ja-Ela</a></li><li><a href="#">Western Province, Sri Lanka</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <ul><li><a href="#">Tue–Sun · 4pm – 10.30pm</a></li><li><a href="#">Closed Mondays</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact & Reservations</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Richmo Pizzeria, Miriswatta</span>
+    <span>Demo site — built for concept purposes</span>
+  </div>
+</footer>
+
+<style>
+.filter-bar{
+  display:flex; gap:10px; flex-wrap:wrap;
+  padding-bottom:20px;
+}
+.filter-tab{
+  padding:10px 20px;
+  border-radius:100px;
+  border:1px solid rgba(245,239,228,.18);
+  background:transparent;
+  color:var(--cream-dim);
+  font-family:var(--f-mono);
+  font-size:12.5px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  transition:all .3s var(--ease);
+}
+.filter-tab:hover{ border-color:var(--crust); color:var(--crust); }
+.filter-tab.active{ background:var(--ember); border-color:var(--ember); color:var(--cream); }
+
+.menu-section{ padding-top:20px; }
+.menu-cat{ margin-bottom:64px; transition:opacity .4s var(--ease), transform .4s var(--ease); }
+.menu-cat.hidden{ display:none; }
+.cat-title{
+  font-size:22px; color:var(--crust);
+  margin-bottom:22px;
+  padding-bottom:14px;
+  border-bottom:1px solid rgba(232,184,88,.15);
+}
+.menu-list{ display:flex; flex-direction:column; gap:22px; }
+.menu-row{
+  display:flex; align-items:baseline; gap:14px;
+}
+.menu-row-name{ min-width:0; }
+.menu-row-name h4{
+  font-family:var(--f-display); font-size:18px; font-weight:600; color:var(--cream);
+  display:inline-flex; align-items:center; gap:10px; margin:0;
+}
+.menu-row-name p{ color:var(--cream-dim); font-size:14px; margin:6px 0 0; }
+.tag{
+  font-family:var(--f-mono); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--char); background:var(--crust); padding:3px 8px; border-radius:100px;
+}
+.dots{
+  flex:1;
+  border-bottom:1px dotted rgba(245,239,228,.25);
+  margin-bottom:6px;
+  min-width:24px;
+}
+.price{
+  font-family:var(--f-mono); color:var(--crust); font-size:15px; white-space:nowrap;
+}
+@media (max-width:640px){
+  .menu-row{ flex-wrap:wrap; }
+  .dots{ display:none; }
+  .menu-row-name{ flex:1 1 100%; }
+}
+</style>
+
+<script src="assets/main.js"></script>
+<script>
+  // menu category filter
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cats = document.querySelectorAll('.menu-cat');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const f = tab.dataset.filter;
+        cats.forEach(cat => {
+          if (f === 'all' || cat.dataset.cat === f) cat.classList.remove('hidden');
+          else cat.classList.add('hidden');
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>
